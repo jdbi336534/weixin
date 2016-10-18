@@ -1,0 +1,58 @@
+.main-contain {
+	width:100%;
+	height:100%;
+	background:#fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+.people{
+	width:100%;
+	height:100px;
+	background:url(../../images/personalv3_headerbg.png) no-repeat center center;
+	background-size:100%;
+}
+.imageview{
+	width:100px;
+	height:100px;
+	
+	display:flex;
+}
+.imageview image{
+	width:60px;
+	height:60px;
+	display:block;
+	margin:auto;
+}
+
+.category{
+	padding-top:20px;
+	width:100%;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/*justify-content: space-between;
+	align-content: space-between;*/
+	
+}
+.catelist{
+	width:21%;
+	height:70px;
+	background:#eee;
+	border-radius:6px;
+	text-align:center;
+	padding-top:10px;
+	margin:0 2% 6px 2%;
+	
+}
+.catelist image{
+	width:50%;
+	height:35px;
+	display:block;
+	margin:0 auto;
+}
+.catetxt{
+	font-size:14px;
+	padding-top:10px;
+}

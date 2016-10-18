@@ -1,0 +1,29 @@
+<view class="main-contain">
+	<view class="people">
+		
+			<view class="imageview">
+					<image src="/images/personalv3_default_usericon.png"></image>
+			</view>
+		
+		<view class="category">
+			<block wx:for="{{category}}">
+					
+				<view class="catelist">
+					<navigator url="../brand/index?id={{item.id}}">
+				<view class="cateimg">
+					<image src="{{item.imgurl}}"></image>
+				</view>
+				<view class="catetxt">
+					<text>{{item.title}}</text>
+				</view>
+				</navigator>
+			</view>
+			
+			</block>
+
+			
+		</view>
+	</view>
+	
+	
+</view>

@@ -1,0 +1,41 @@
+<view class="container">
+    <view class="shoeinfom">
+      <view>
+        <swiper class="showimg" indicator-dots="{{true}}" autoplay="{{false}}">
+            <block wx:for="{{content.itemInfo[0].image}}">
+                <swiper-item>
+                    <image src="{{item.imgUrl}}" class="slide-image" width="355" height="150" />
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class="listname"><text>{{content.listName}}</text></view>
+        <view class="info">
+            本商品由<text class="storename">{{content.storeName}}</text>配送并提供售后服务。
+            <view>本商品由邮乐网入驻商家提供。</view>
+        </view>
+        <view class="price">
+            <text class="nowprice">¥{{content.itemInfo[0].salePrice}}</text>
+            <text class="lastprice">¥{{content.itemInfo[0].marketPrice}}</text>
+        </view>
+        <view class="prod-items">
+
+        </view>
+    </view>
+    </view>
+    <view class="buy">
+        <view class="leftbtn">
+            <view class="shoucang">
+                <image src="../../images/collect02.png"></image>
+            </view>
+            <view class="cart">
+                <image src="../../images/shopping_cart.png"></image>
+            </view>
+        </view>
+        <view class="rightbtn">
+          <ul>
+            <li class="addCart">加入购物车</li>
+              <li class="buyBtn">立即购买</li>
+          </ul>
+        </view>
+    </view>
+</view>

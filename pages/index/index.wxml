@@ -1,0 +1,162 @@
+<!--index.wxml-->
+<view class="main-container">
+	<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+		<block wx:for="{{imgUrls}}">
+			<swiper-item>
+				<image src="{{item}}" class="slide-image" width="355" height="150" />
+			</swiper-item>
+		</block>
+	</swiper>
+	<view class="main-list">
+		<view class="selectUl">
+			<ul>
+				<li wx:for="{{selectul}}" wx:for-item="items">
+					<span>
+				<i class="{{items.cls}}"></i>
+				</span>
+					<b>{{items.title}}</b>
+				</li>
+			</ul>
+		</view>
+		<view class="onlyphone">
+			<view class="section__title">手机专享</view>
+			<scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+				<block wx:for="{{onlyphone}}">
+					<view class="scroll-view-item_H">
+						<navigator url="../brand/index?id={{item.id}}">
+							<view class="imgview">
+								<image src="{{item.imgUrl}}"></image>
+							</view>
+							<view class="textview">
+								<text>{{item.title}}</text>
+							</view>
+						</navigator>
+					</view>
+
+				</block>
+			</scroll-view>
+		</view>
+
+		<view class="pingpai">
+			<view class="pingpai_list">
+				<block wx:for="{{pingpai}}">
+					<view class="venues_item">
+						<navigator url="../brand/index?id={{item.id}}">
+							<image src="{{item.imgUrl}}" />
+						</navigator>
+					</view>
+				</block>
+			</view>
+
+		</view>
+
+		<view class="them_box">
+			<view class="title">
+				<text>主题馆</text>
+				<text class="more">特色农品</text>
+			</view>
+			<view class="them_list">
+
+				<view class="list_np">
+					<navigator url="../brand/index?id=1482625">
+						<image src="{{tesenp[0].imgUrl}}" />
+					</navigator>
+				</view>
+				<view class="list_np list_np_r">
+
+					<view class="list_tp">
+						<navigator url="../brand/index?id=1758278">
+							<image src="{{tesenp[1].imgUrl}}" />
+						</navigator>
+					</view>
+					<view class="list_dw">
+						<view class="list_dl">
+							<navigator url="../brand/index?id=1335450">
+								<image src="{{tesenp[2].imgUrl}}" />
+							</navigator>
+						</view>
+						<view class="list_dr">
+							<navigator url="../brand/index?id=1809888">
+								<image src="{{tesenp[3].imgUrl}}" />
+							</navigator>
+						</view>
+					</view>
+				</view>
+			</view>
+
+		</view>
+		<view class="ad">
+			<navigator>
+				<image src="http://pic3.ule.com/item/user_0102/desc20160930/40daaff288bd2d50_-1x-1.jpg"></image>
+			</navigator>
+		</view>
+		<!--today good shop-->
+		<view class="goodshop">
+			<view class="tittext">
+				<view class="line"></view>
+				<text class="tui">今日好店铺</text></view>
+
+			<swiper class="swper" indicator-dots="{{indicatorDots}}" autoplay="{{false}}" interval="{{interval}}" duration="{{duration}}">
+				<block wx:for="{{goodshoptoday}}">
+					<swiper-item>
+						<!--<image src="{{item}}" class="slide-image" width="355" height="150" />-->
+						<navigator url="../brand/index?id={{item.id}}">
+							<view class="slide-view">
+								<view class="sv_tp">
+									<view class="item1">
+										<image src="{{item.imgUrl}}"></image>
+									</view>
+									<view class="item2">
+										<text class="it2txt">{{item.title}}</text>
+										<text class="it2txt-1">{{item.subTitle}}</text>
+									</view>
+									<view class="item3">
+										<text class="getin">进入店铺</text>
+									</view>
+								</view>
+								<view class="sv_dw">
+									<view>
+										<image src="{{item.picurl_item1}}"></image>
+									</view>
+									<view>
+										<image src="{{item.picurl_item2}}"></image>
+									</view>
+									<view>
+										<image src="{{item.picurl_item3}}"></image>
+									</view>
+								</view>
+							</view>
+						</navigator>
+					</swiper-item>
+				</block>
+			</swiper>
+		</view>
+
+		<view class="gussulike">
+			<view class="tittext">
+				<view class="line"></view>
+				<text class="gusstxt">猜你喜欢</text></view>
+			<view class="gullist">
+				<block wx:for="{{gussyoulike}}">
+
+					<view class="gslist">
+						<navigator url="../brand/index?id={{item.listingId}}">
+							<image src="{{item.imgUrl}}"></image>
+							<view class="textwrap"><text class="gstitle">{{item.listingName}}</text></view>
+							<view class="two-items">
+								<view>
+									<text class="maxprice">¥{{item.maxPrice}}</text>
+									<text class="minprice">¥{{item.minPrice}}</text>
+								</view>
+								<view class="discontent">
+									<text class="discount">7.0折</text>
+								</view>
+							</view>
+						</navigator>
+					</view>
+
+				</block>
+			</view>
+		</view>
+
+	</view>

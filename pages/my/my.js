@@ -1,0 +1,56 @@
+Page({
+	data: {
+		category: [{
+			"imgurl": "/images/personalv3_myorder.png",
+			"title": "购物订单"
+		}, {
+			"imgurl": "/images/personalv3_myorder.png",
+			"title": "充值订单"
+		}, {
+			"imgurl": "/images/personalv3_myorder.png",
+			"title": "发红包"
+		}, {
+			"imgurl": "/images/personalv3_myorder.png",
+			"title": "优惠券"
+		}, {
+			"imgurl": "/images/personalv3_myorder.png",
+			"title": "我的收藏"
+		}, {
+			"imgurl": "/images/personalv3_myorder.png",
+			"title": "余额"
+		}, {
+			"imgurl": "/images/personalv3_myorder.png",
+			"title": "收货地址"
+		}, {
+			"imgurl": "/images/personalv3_myorder.png",
+			"title": "邮储快捷"
+		}, {
+			"imgurl": "/images/personalv3_myorder.png",
+			"title": "邮乐卡"
+		}, {
+			"imgurl": "/images/personalv3_myorder.png",
+			"title": "我有意见"
+		}, {
+			"imgurl": "/images/personalv3_myorder.png",
+			"title": "扫一扫"
+		}, {
+			"imgurl": "/images/personalv3_myorder.png",
+			"title": "订单回收"
+		}, {
+			"imgurl": "/images/personalv3_myorder.png",
+			"title": "退换查询"
+		}, {
+			"imgurl": "/images/personalv3_myorder.png",
+			"title": "预售订单"
+		}, {
+			"imgurl": "/images/personalv3_myorder.png",
+			"title": "站内单"
+		}, {
+			"imgurl": "/images/personalv3_myorder.png",
+			"title": "我的团购"
+		}, {
+			"imgurl": "/images/personalv3_myorder.png",
+			"title": "系统设置"
+		}]
+	}
+})
